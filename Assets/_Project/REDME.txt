@@ -17,15 +17,22 @@ The game logic is governed by a centralized GameManager using a strictly defined
 Menu: Initial interactive 3D environment.
 
 Playing: active physics and AI tracking.
+
 *------------------------------------------*
+
 Cinematic Mesh-Based UI:
 to overcome standard Canvas limitations with depth of field, I implemented a Mesh UI system using Quads and TextMeshPro as world-space objects, the UI integrates perfectly with the post-processing stack, allowing for high-end cinematic blurs during menu transitions.
+
 *------------------------------------------*
+
 AI & Navigation:
 The Predator (Cat) utilizes a sophisticated NavMesh Agent system. The AI is programmed to pause during transitions and menus to maintain game state integrity and performance.
+
 *------------------------------------------*
+
 Modular Environment Design
 The environment is built using a Modular Kit approach (SM_Prefix naming convention), allowing for efficient scene assembly and high-performance static batching.
+
 *------------------------------------------*
 
 Controls:
