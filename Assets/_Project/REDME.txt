@@ -1,0 +1,36 @@
+Woolen Swing
+*------------------------------------------*
+
+Project Summary
+Woolen Swing is a physics-based prototype where players control a ball of wool navigating a closed environment, The core gameplay focuses on a "swinging" mechanic, where the player attaches to nails and hooks to swing across the room, escaping an cat to reach the safety of the wool basket.
+
+Developer: Mohammed Alhamid.
+
+Genre: Physics-Platformer / Action.
+
+Engine: Unity 2026 (Universal Render Pipeline).
+
+Technical Highlights
+1. Robust State Machine (FSM)
+The game logic is governed by a centralized GameManager using a strictly defined GameState Enum.
+
+Menu: Initial interactive 3D environment.
+
+Playing: active physics and AI tracking.
+*------------------------------------------*
+Cinematic Mesh-Based UI:
+to overcome standard Canvas limitations with depth of field, I implemented a Mesh UI system using Quads and TextMeshPro as world-space objects, the UI integrates perfectly with the post-processing stack, allowing for high-end cinematic blurs during menu transitions.
+*------------------------------------------*
+AI & Navigation:
+The Predator (Cat) utilizes a sophisticated NavMesh Agent system. The AI is programmed to pause during transitions and menus to maintain game state integrity and performance.
+*------------------------------------------*
+Modular Environment Design
+The environment is built using a Modular Kit approach (SM_Prefix naming convention), allowing for efficient scene assembly and high-performance static batching.
+*------------------------------------------*
+
+Controls:
+Left Mouse Click: Fire thread / Attach to nearest nail.
+
+Release Click: Detach / Swing.
+
+Mouse Movement: Camera look/aim.
